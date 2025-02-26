@@ -2,6 +2,20 @@
 <html>
 <head>
     <title>Assignment 21</title>
+    <style>
+        .btn{
+            width:60%;
+            display: block;
+            margin:0 auto;
+            padding:5px;
+            font-size:20px;
+            border-radius:20px;
+            border:none;
+            color:white;
+            cursor: pointer;
+            background-color: rgb(176, 176, 250);
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -22,7 +36,7 @@
             const input2Element=document.getElementById("num2");
             const resultElement=document.getElementById("result");
 
-            const area=parseInt(input1Element.value)*parseInt(input1Element.value)
+            const area=parseInt(input1Element.value)*parseInt(input2Element.value)
             resultElement.innerText=`Area of rectangle:${area}`;
         }
     </script>
