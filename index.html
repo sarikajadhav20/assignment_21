@@ -16,5 +16,15 @@
             <button class="btn" onclick="calculate()">Calculate</button>
         </div>
     </div>
+    <script>
+        function calculate(){
+            const input1Element=document.getElementById("num1");
+            const input2Element=document.getElementById("num2");
+            const resultElement=document.getElementById("result");
+
+            const area=parseInt(input1Element.value)*parseInt(input1Element.value)
+            resultElement.innerText=`Area of rectangle:${area}`;
+        }
+    </script>
 </body>
 </html>
